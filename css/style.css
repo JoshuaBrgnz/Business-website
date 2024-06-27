@@ -8,7 +8,8 @@ body {
 }
 
 .container {
-    width: 1000px;
+    max-width: 1000px;
+    width: 95%;
     height: auto;
     margin: 10px auto;
     background-color: white;
@@ -222,49 +223,37 @@ body {
 }
 /* Contact Page */
 
-
 /* Mobile Menu */
 .mobile-menu {
     display: none !important;
 }
 /* Mobile Menu */
 
-/* Responsive Web Design */
+/* Responsive Web page */
 @media screen and (max-width: 750px) {
+    .main-menu > .drop {
+        display: none;
+    }
     .main-header {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
+
     .mobile-menu {
         display: flex !important;
         justify-content: space-between !important;
     }
+
     .main-menu > ul:nth-of-type(2) {
-        display: none;
         flex-direction: column;
         border-top: 1px solid gainsboro;
     }
+    
     .drop > li > a {
         display: block;
         width: auto;
     }
-    #adaptive img {
-        width: 100%;
-    }
-    .content-holder {
-        flex-direction: column;
-    }
-    .content-holder .content,
-    .content-holder .sidebar {
-        width: auto;
-    }
-    .footer-widget-holder {
-        flex-direction: column;
-    }
-    .footer-widget-holder .footer-widget {
-        padding: 10px 25px;
-    }
 }
-/* Responsive Web Design */
+/* Responsive Web page */
 
